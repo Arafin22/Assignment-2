@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*=========================== menu ssection start========================*/
+
+.manu-section {
+  width: 1080px;
+  margin: 0 auto;
+}
+.inner-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5px;
+}
+
+.menu-right {
+}
+.menu-right > a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+.menu-right > i {
+  color: black;
+  margin-right: 20px;
+}
+
+/*=========================== header ssection start========================*/
+
+.header-section {
+  width: 1080px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  /*background-color: violet;*/
+}
+.left-part {
+  margin: 10%;
+  margin-left: 0;
+}
+.left-part h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.left-part h5 {
+  font-weight: 400;
+}
+.button {
+  display: flex;
+
+  background-color: tomato;
+  border-radius: 20px;
+  width: 30%;
+  padding: 5px 10px;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.button > p,
+i {
+  color: white;
+  padding: 5px 0;
+}
+i > .arrow-custom {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.right-part {
+  width: 50%;
+  height: 100%;
+}
+
+#main-camera {
+  margin-top: -400px;
+  transition: transform 2s;
+}
+#main-camera:hover {
+  margin-top: -400px;
+  transform: rotate(30deg);
+}
+
+/*=========================== logo ssection start========================*/
+.company-logo-section {
+  width: 1080px;
+  margin: 0 auto;
+}
+hr {
+  border: 1px solid rgb(9, 1, 1);
+  opacity: 0.1;
+}
+.company-logo {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 5px;
+}
+
+/*=========================== midea query ssection start========================*/
+
+@media only screen and (max-width: 768px) {
+  .manu-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .inner-menu {
+    padding: 20px 5px;
+  }
+
+  .menu-right {
+    text-align: center;
+  }
+  .menu-right > a {
+    display: none;
+  }
+  .menu-right > .fa-search {
+    display: none;
+  }
+  .menu-right > i {
+    margin-top: 10px;
+    color: black;
+  }
+
+  /*=========================== media header ssection start========================*/
+  .header-section {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+
+    background-color: rgb(130, 238, 211);
+    overflow: hidden;
+  }
+  .left-part {
+    text-align: center;
+    max-width: 100%;
+    margin: 20% 10%;
+  }
+
+  .button {
+    position: absolute;
+    margin-left: 25%;
+    width: 30%;
+  }
+  .button > p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  i.arrow-custom {
+  }
+  .right-part {
+    max-width: 100%;
+    padding-left: 20%;
+    padding-top: 10%;
+  }
+
+  img,
+  #main-camera {
+    height: 300px;
+    width: 300px;
+  }
+
+  /*=========================== media logo ssection start========================*/
+  .company-logo-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  hr {
+    border: 1px solid rgb(9, 1, 1);
+    opacity: 0.1;
+  }
+  .company-logo {
+    display: flex;
+
+    padding: 20px 5px;
+  }
+  .company-logo > img {
+    height: 40px;
+    width: 50px;
+  }
+}
