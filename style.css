@@ -214,7 +214,7 @@ form {
 
 /*=========================== midea query ssection start========================*/
 
-@media screen and (max-width: 900px) and (min-width: 414px) {
+@media screen and (max-width: 1024px) and (min-width: 414px) {
   /*=========================== media header ssection start========================*/
 
   .manu-section {
@@ -258,6 +258,9 @@ form {
   }
   #all-collection {
     grid-template-columns: auto auto;
+  }
+  #right-arrow {
+    margin-right: 10%;
   }
 
   /* subscribe*/
